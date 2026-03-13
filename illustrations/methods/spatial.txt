@@ -1,0 +1,20 @@
+Create a scientific diagram illustrating World Labs' Spatial Intelligence approach (Marble product) for 3D world understanding.
+
+The diagram should show:
+1. Input: A single 2D photograph or text description
+2. Processing: A neural network that infers 3D structure, depth, lighting, and object geometry
+3. Output: A complete 3D scene that is navigable (camera can move freely), editable (objects can be modified individually), and exportable as 3D models
+
+Key visual elements:
+- A flat 2D image on the left transforming into a full 3D environment on the right
+- Multiple camera viewpoints shown around the 3D scene (arrows showing free navigation)
+- Individual 3D objects highlighted as separately editable components
+- A comparison panel: "Video Generator" produces flat frames vs "Marble" produces persistent 3D worlds
+- Technical context: Show NeRF / 3D Gaussian Splatting as foundational techniques leading to generative 3D
+
+Annotations:
+- "Persistent 3D world: objects exist even when camera looks away"
+- "From reconstruction to generation"
+- Labels for depth estimation, lighting, geometry inference
+
+Style: Clean academic illustration with clear before/after comparison.

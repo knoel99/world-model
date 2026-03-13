@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 480" font-family="Inter, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="ao" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#e17055"/>
+    </marker>
+    <marker id="ab" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#0984e3"/>
+    </marker>
+    <filter id="sd" x="-3%" y="-3%" width="106%" height="106%">
+      <feDropShadow dx="1" dy="1" stdDeviation="2" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <rect width="860" height="480" fill="#fafbfc" rx="8"/>
+
+  <text x="430" y="32" text-anchor="middle" font-size="17" font-weight="700" fill="#1a1a2e">Simulation apprise : deux courants convergents</text>
+  <text x="430" y="50" text-anchor="middle" font-size="11" fill="#636e72">Google DeepMind (Genie 3, Dreamer V4) &amp; Runway (GWM-1)</text>
+
+  <!-- ===== LEFT: Genie 3 ===== -->
+  <rect x="20" y="65" width="395" height="290" rx="10" fill="#fff" stroke="#e17055" stroke-width="2" filter="url(#sd)"/>
+  <rect x="20" y="65" width="395" height="30" rx="10" fill="#e17055"/>
+  <rect x="20" y="85" width="395" height="10" fill="#e17055"/>
+  <text x="217" y="86" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">Generation video interactive (Genie 3)</text>
+
+  <!-- Text prompt -->
+  <rect x="40" y="108" width="160" height="35" rx="5" fill="#ffeaa7" stroke="#fdcb6e" stroke-width="1"/>
+  <text x="120" y="128" text-anchor="middle" font-size="8" fill="#2d3436">"un jardin japonais</text>
+  <text x="120" y="138" text-anchor="middle" font-size="8" fill="#2d3436">au bord d'un lac"</text>
+
+  <line x1="200" y1="126" x2="230" y2="126" stroke="#e17055" stroke-width="1.5" marker-end="url(#ao)"/>
+
+  <!-- Autoregressive model -->
+  <rect x="235" y="105" width="100" height="42" rx="5" fill="#fab1a0" stroke="#e17055" stroke-width="1.5"/>
+  <text x="285" y="123" text-anchor="middle" font-size="9" font-weight="600" fill="#2d3436">Modele</text>
+  <text x="285" y="136" text-anchor="middle" font-size="9" font-weight="600" fill="#2d3436">auto-regressif</text>
+
+  <line x1="335" y1="126" x2="355" y2="126" stroke="#e17055" stroke-width="1.5" marker-end="url(#ao)"/>
+
+  <!-- Generated frames -->
+  <rect x="358" y="108" width="28" height="20" rx="2" fill="#e17055"/>
+  <rect x="365" y="113" width="28" height="20" rx="2" fill="#d63031"/>
+  <rect x="372" y="118" width="28" height="20" rx="2" fill="#c0392b"/>
+  <text x="385" y="148" text-anchor="middle" font-size="7" fill="#636e72">24 fps HD</text>
+
+  <!-- User actions loop -->
+  <rect x="40" y="165" width="120" height="30" rx="5" fill="#dfe6e9" stroke="#636e72" stroke-width="1"/>
+  <text x="100" y="184" text-anchor="middle" font-size="8" fill="#2d3436">Actions utilisateur</text>
+  <text x="100" y="210" text-anchor="middle" font-size="7" fill="#636e72">avancer / tourner / interagir</text>
+
+  <!-- Feedback arrow -->
+  <path d="M160,180 Q200,180 230,150 L235,147" fill="none" stroke="#e17055" stroke-width="1.5" marker-end="url(#ao)"/>
+
+  <!-- Coherence note -->
+  <rect x="40" y="225" width="355" height="55" rx="5" fill="#fff3f3" stroke="#d63031" stroke-width="1"/>
+  <text x="50" y="245" font-size="9" font-weight="600" fill="#d63031">Coherence temporelle ~1 minute</text>
+  <text x="50" y="260" font-size="8" fill="#636e72">Si le joueur tourne le dos a un arbre puis revient,</text>
+  <text x="50" y="272" font-size="8" fill="#636e72">l'arbre est toujours la. Appris, pas programme.</text>
+
+  <!-- Key fact -->
+  <text x="217" y="305" text-anchor="middle" font-size="9" fill="#636e72">Runway GWM-1 : 3 variantes specialisees</text>
+  <text x="217" y="320" text-anchor="middle" font-size="9" fill="#636e72">(mondes virtuels, robotique, avatars)</text>
+  <text x="217" y="345" text-anchor="middle" font-size="10" font-style="italic" font-weight="600" fill="#e17055">Monde simulable visuellement</text>
+
+  <!-- ===== RIGHT: Dreamer ===== -->
+  <rect x="440" y="65" width="400" height="290" rx="10" fill="#fff" stroke="#0984e3" stroke-width="2" filter="url(#sd)"/>
+  <rect x="440" y="65" width="400" height="30" rx="10" fill="#0984e3"/>
+  <rect x="440" y="85" width="400" height="10" fill="#0984e3"/>
+  <text x="640" y="86" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">Apprentissage en imagination (Dreamer V4)</text>
+
+  <!-- Observe -->
+  <rect x="465" y="108" width="80" height="35" rx="5" fill="#dfe6e9" stroke="#0984e3" stroke-width="1"/>
+  <text x="505" y="128" text-anchor="middle" font-size="9" font-weight="600" fill="#2d3436">Observer</text>
+  <text x="505" y="140" text-anchor="middle" font-size="7" fill="#636e72">monde reel</text>
+
+  <line x1="545" y1="126" x2="565" y2="126" stroke="#0984e3" stroke-width="1.5" marker-end="url(#ab)"/>
+
+  <!-- Latent world model -->
+  <ellipse cx="640" cy="126" rx="60" ry="28" fill="#e8f4ff" stroke="#0984e3" stroke-width="1.5"/>
+  <text x="640" y="122" text-anchor="middle" font-size="9" font-weight="600" fill="#0984e3">World Model</text>
+  <text x="640" y="135" text-anchor="middle" font-size="8" fill="#636e72">latent compact</text>
+
+  <line x1="700" y1="126" x2="725" y2="126" stroke="#0984e3" stroke-width="1.5" marker-end="url(#ab)"/>
+
+  <!-- Dream bubble -->
+  <ellipse cx="790" cy="126" rx="40" ry="25" fill="#74b9ff" stroke="#0984e3" stroke-width="1.5" opacity="0.5"/>
+  <text x="790" y="122" text-anchor="middle" font-size="9" font-weight="700" fill="#0984e3">Reve</text>
+  <text x="790" y="134" text-anchor="middle" font-size="7" fill="#2d3436">x1000</text>
+
+  <!-- Dream loop back -->
+  <path d="M790,151 Q790,175 720,175 Q650,175 640,154" fill="none" stroke="#0984e3" stroke-width="1.5" marker-end="url(#ab)"/>
+  <text x="715" y="190" text-anchor="middle" font-size="8" fill="#636e72">Evaluer et affiner la politique</text>
+
+  <!-- Minecraft result -->
+  <rect x="465" y="210" width="355" height="65" rx="5" fill="#e8f4ff" stroke="#0984e3" stroke-width="1.5"/>
+  <text x="642" y="232" text-anchor="middle" font-size="10" font-weight="700" fill="#0984e3">Resultat emblematique</text>
+  <!-- Diamond icon -->
+  <polygon points="625,245 640,240 655,245 650,260 630,260" fill="#74b9ff" stroke="#0984e3" stroke-width="1"/>
+  <text x="642" y="257" text-anchor="middle" font-size="7" font-weight="700" fill="#fff">&#9830;</text>
+  <text x="710" y="252" text-anchor="start" font-size="8" fill="#2d3436">Diamants dans Minecraft</text>
+  <text x="710" y="264" text-anchor="start" font-size="8" fill="#636e72">100% offline - jamais joue au jeu</text>
+
+  <!-- Tech details -->
+  <text x="640" y="300" text-anchor="middle" font-size="8" fill="#636e72">Architecture Transformer + shortcut forcing</text>
+  <text x="640" y="315" text-anchor="middle" font-size="8" fill="#636e72">Temps reel sur un seul GPU</text>
+  <text x="640" y="345" text-anchor="middle" font-size="10" font-style="italic" font-weight="600" fill="#0984e3">Apprendre sans jamais agir</text>
+
+  <!-- ===== BOTTOM: Convergence ===== -->
+  <rect x="150" y="375" width="560" height="90" rx="10" fill="#2d3436" filter="url(#sd)"/>
+
+  <!-- Convergence arrows -->
+  <line x1="217" y1="355" x2="300" y2="375" stroke="#e17055" stroke-width="2"/>
+  <line x1="640" y1="355" x2="560" y2="375" stroke="#0984e3" stroke-width="2"/>
+
+  <text x="430" y="400" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">Convergence</text>
+  <text x="430" y="420" text-anchor="middle" font-size="9" fill="#dfe6e9">Humains jouent dans le world model de Dreamer V4</text>
+  <text x="430" y="435" text-anchor="middle" font-size="9" fill="#dfe6e9">Genie 3 entraine les agents SIMA de DeepMind</text>
+  <text x="430" y="455" text-anchor="middle" font-size="10" font-weight="600" fill="#ffeaa7">Besoin commun : simuler fidelement les consequences d'actions</text>
+</svg>

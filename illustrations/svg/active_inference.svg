@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 500" font-family="Inter, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="af" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#f39c12"/>
+    </marker>
+    <marker id="ag" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#636e72"/>
+    </marker>
+    <filter id="sg" x="-3%" y="-3%" width="106%" height="106%">
+      <feDropShadow dx="1" dy="1" stdDeviation="2" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <rect width="860" height="500" fill="#fafbfc" rx="8"/>
+
+  <text x="430" y="32" text-anchor="middle" font-size="17" font-weight="700" fill="#1a1a2e">Inference active : minimiser la surprise</text>
+  <text x="430" y="50" text-anchor="middle" font-size="11" fill="#636e72">VERSES AI (Karl Friston) - Principe de l'Energie Libre</text>
+
+  <!-- ===== LEFT: Main inference cycle ===== -->
+  <rect x="20" y="65" width="400" height="280" rx="10" fill="#fff" stroke="#f39c12" stroke-width="2" filter="url(#sg)"/>
+  <text x="220" y="88" text-anchor="middle" font-size="13" font-weight="700" fill="#f39c12">Boucle d'inference active</text>
+
+  <!-- Circular loop -->
+  <!-- Predict -->
+  <rect x="160" y="105" width="120" height="40" rx="20" fill="#ffeaa7" stroke="#f39c12" stroke-width="2"/>
+  <text x="220" y="129" text-anchor="middle" font-size="11" font-weight="700" fill="#2d3436">Predire</text>
+
+  <!-- Arrow predict -> observe -->
+  <path d="M280,125 Q340,100 350,155" fill="none" stroke="#f39c12" stroke-width="2" marker-end="url(#af)"/>
+
+  <!-- Observe -->
+  <rect x="300" y="160" width="110" height="40" rx="20" fill="#ffeaa7" stroke="#f39c12" stroke-width="2"/>
+  <text x="355" y="184" text-anchor="middle" font-size="11" font-weight="700" fill="#2d3436">Observer</text>
+
+  <!-- Arrow observe -> surprise -->
+  <path d="M355,200 Q360,260 290,270" fill="none" stroke="#f39c12" stroke-width="2" marker-end="url(#af)"/>
+
+  <!-- Surprise -->
+  <rect x="170" y="250" width="120" height="50" rx="8" fill="#fff" stroke="#e74c3c" stroke-width="2"/>
+  <text x="230" y="272" text-anchor="middle" font-size="10" font-weight="700" fill="#e74c3c">Surprise !</text>
+  <text x="230" y="288" text-anchor="middle" font-size="8" fill="#636e72">prediction ≠ observation</text>
+
+  <!-- Two response arrows -->
+  <!-- Update beliefs -->
+  <path d="M170,265 Q100,240 80,200" fill="none" stroke="#27ae60" stroke-width="2" marker-end="url(#ag)"/>
+  <rect x="35" y="160" width="105" height="45" rx="6" fill="#e8fff5" stroke="#27ae60" stroke-width="1.5"/>
+  <text x="87" y="178" text-anchor="middle" font-size="8" font-weight="600" fill="#27ae60">Mettre a jour</text>
+  <text x="87" y="192" text-anchor="middle" font-size="8" font-weight="600" fill="#27ae60">les croyances</text>
+
+  <!-- Act on world -->
+  <path d="M230,300 Q230,325 170,330" fill="none" stroke="#0984e3" stroke-width="2" marker-end="url(#ag)"/>
+  <rect x="55" y="310" width="115" height="30" rx="6" fill="#e8f4ff" stroke="#0984e3" stroke-width="1.5"/>
+  <text x="112" y="330" text-anchor="middle" font-size="8" font-weight="600" fill="#0984e3">Agir sur le monde</text>
+
+  <!-- Arrow back to predict -->
+  <path d="M87,160 Q87,120 160,120" fill="none" stroke="#f39c12" stroke-width="1.5" marker-end="url(#af)" stroke-dasharray="4,2"/>
+  <path d="M112,310 Q40,290 40,160 Q40,105 160,115" fill="none" stroke="#f39c12" stroke-width="1.5" marker-end="url(#af)" stroke-dasharray="4,2"/>
+
+  <!-- Curiosity bubble -->
+  <ellipse cx="350" cy="310" rx="55" ry="22" fill="#ffeaa7" stroke="#f39c12" stroke-width="1.5" opacity="0.7"/>
+  <text x="350" y="314" text-anchor="middle" font-size="8" font-weight="600" fill="#f39c12">Curiosite intrinseque</text>
+  <text x="350" y="338" text-anchor="middle" font-size="7" fill="#636e72">Explorer les zones incertaines</text>
+
+  <!-- ===== RIGHT TOP: Contrast with RL ===== -->
+  <rect x="440" y="65" width="400" height="120" rx="10" fill="#fff" stroke="#636e72" stroke-width="1.5" filter="url(#sg)"/>
+  <text x="640" y="88" text-anchor="middle" font-size="12" font-weight="700" fill="#2d3436">RL classique vs Inference active</text>
+
+  <!-- RL -->
+  <rect x="460" y="100" width="170" height="35" rx="5" fill="#fff3f3" stroke="#d63031" stroke-width="1"/>
+  <text x="545" y="116" text-anchor="middle" font-size="9" font-weight="600" fill="#d63031">Apprentissage par renforcement</text>
+  <text x="545" y="128" text-anchor="middle" font-size="8" fill="#636e72">Maximiser recompense externe</text>
+
+  <!-- Active Inference -->
+  <rect x="460" y="140" width="170" height="35" rx="5" fill="#fff8e6" stroke="#f39c12" stroke-width="1.5"/>
+  <text x="545" y="156" text-anchor="middle" font-size="9" font-weight="600" fill="#f39c12">Inference active</text>
+  <text x="545" y="168" text-anchor="middle" font-size="8" fill="#636e72">Minimiser la surprise</text>
+
+  <!-- Key differences -->
+  <text x="710" y="118" font-size="8" fill="#636e72">Recompense &#8594; externe, definie</text>
+  <text x="710" y="158" font-size="8" fill="#636e72">Preferences + curiosite naturelle</text>
+
+  <!-- ===== RIGHT BOTTOM: AXIOM Architecture ===== -->
+  <rect x="440" y="200" width="400" height="145" rx="10" fill="#fff" stroke="#f39c12" stroke-width="2" filter="url(#sg)"/>
+  <text x="640" y="222" text-anchor="middle" font-size="12" font-weight="700" fill="#f39c12">AXIOM : architecture structuree</text>
+
+  <!-- Object-centric model -->
+  <g transform="translate(470,235)">
+    <!-- Objects as nodes -->
+    <circle cx="40" cy="30" r="18" fill="#ffeaa7" stroke="#f39c12" stroke-width="1.5"/>
+    <text x="40" y="33" text-anchor="middle" font-size="7" font-weight="600" fill="#2d3436">Obj A</text>
+    <text x="40" y="43" text-anchor="middle" font-size="6" fill="#636e72">pos, forme</text>
+
+    <circle cx="140" cy="20" r="18" fill="#ffeaa7" stroke="#f39c12" stroke-width="1.5"/>
+    <text x="140" y="23" text-anchor="middle" font-size="7" font-weight="600" fill="#2d3436">Obj B</text>
+    <text x="140" y="33" text-anchor="middle" font-size="6" fill="#636e72">pos, poids</text>
+
+    <circle cx="100" cy="70" r="18" fill="#ffeaa7" stroke="#f39c12" stroke-width="1.5"/>
+    <text x="100" y="73" text-anchor="middle" font-size="7" font-weight="600" fill="#2d3436">Obj C</text>
+    <text x="100" y="83" text-anchor="middle" font-size="6" fill="#636e72">pos, type</text>
+
+    <!-- Relations -->
+    <line x1="56" y1="25" x2="122" y2="22" stroke="#f39c12" stroke-width="1" stroke-dasharray="3,2"/>
+    <line x1="48" y1="46" x2="86" y2="56" stroke="#f39c12" stroke-width="1" stroke-dasharray="3,2"/>
+    <line x1="122" y1="36" x2="110" y2="54" stroke="#f39c12" stroke-width="1" stroke-dasharray="3,2"/>
+  </g>
+
+  <!-- Properties -->
+  <rect x="660" y="240" width="160" height="90" rx="6" fill="#fff8e6" stroke="#f39c12" stroke-width="1"/>
+  <text x="740" y="258" text-anchor="middle" font-size="9" font-weight="600" fill="#f39c12">Proprietes cles</text>
+  <text x="670" y="276" font-size="8" fill="#2d3436">&#8226; Pas de reseaux profonds</text>
+  <text x="670" y="291" font-size="8" fill="#2d3436">&#8226; Inference bayesienne</text>
+  <text x="670" y="306" font-size="8" fill="#2d3436">&#8226; Interpretable</text>
+  <text x="670" y="321" font-size="8" fill="#2d3436">&#8226; Compositionnel</text>
+
+  <!-- ===== BOTTOM: Robotics ===== -->
+  <rect x="440" y="358" width="400" height="125" rx="10" fill="#fff" stroke="#f39c12" stroke-width="2" filter="url(#sg)"/>
+  <text x="640" y="380" text-anchor="middle" font-size="12" font-weight="700" fill="#f39c12">Application robotique : architecture hierarchique</text>
+
+  <!-- Hierarchical agents -->
+  <!-- High level -->
+  <rect x="560" y="392" width="160" height="28" rx="5" fill="#f39c12"/>
+  <text x="640" y="410" text-anchor="middle" font-size="9" font-weight="700" fill="#fff">Agent haut niveau : planification</text>
+
+  <!-- Lines down -->
+  <line x1="580" y1="420" x2="520" y2="440" stroke="#f39c12" stroke-width="1.5"/>
+  <line x1="640" y1="420" x2="640" y2="440" stroke="#f39c12" stroke-width="1.5"/>
+  <line x1="700" y1="420" x2="760" y2="440" stroke="#f39c12" stroke-width="1.5"/>
+
+  <!-- Low level agents -->
+  <rect x="480" y="440" width="75" height="25" rx="4" fill="#ffeaa7" stroke="#f39c12" stroke-width="1"/>
+  <text x="517" y="456" text-anchor="middle" font-size="7" font-weight="600" fill="#2d3436">Joint 1</text>
+
+  <rect x="602" y="440" width="75" height="25" rx="4" fill="#ffeaa7" stroke="#f39c12" stroke-width="1"/>
+  <text x="639" y="456" text-anchor="middle" font-size="7" font-weight="600" fill="#2d3436">Joint 2</text>
+
+  <rect x="724" y="440" width="75" height="25" rx="4" fill="#ffeaa7" stroke="#f39c12" stroke-width="1"/>
+  <text x="761" y="456" text-anchor="middle" font-size="7" font-weight="600" fill="#2d3436">Joint 3</text>
+
+  <text x="640" y="480" text-anchor="middle" font-size="8" fill="#636e72">Coordination par croyances partagees | Replanification instantanee</text>
+
+  <!-- Bottom summary -->
+  <rect x="20" y="360" width="400" height="28" rx="6" fill="#fff8e6" stroke="#f39c12" stroke-width="1"/>
+  <text x="220" y="378" text-anchor="middle" font-size="9" font-weight="600" fill="#f39c12">Ordres de grandeur moins de donnees necessaires</text>
+
+  <rect x="20" y="395" width="400" height="28" rx="6" fill="#fff8e6" stroke="#f39c12" stroke-width="1"/>
+  <text x="220" y="413" text-anchor="middle" font-size="9" font-weight="600" fill="#f39c12">Seule approche issue de la biologie, pas du deep learning</text>
+</svg>

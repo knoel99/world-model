@@ -1,0 +1,30 @@
+Create a scientific diagram illustrating NVIDIA Cosmos as an infrastructure platform for building world models.
+
+The diagram should show a layered platform architecture (bottom to top):
+
+LAYER 1 - Data Processing (bottom):
+- 20 million hours of video input
+- Processing pipeline on Blackwell GPUs
+- "14 days on Blackwell vs 3+ years on standard GPUs"
+
+LAYER 2 - Visual Tokenizer:
+- Video frames being decomposed into visual tokens
+- "8x more efficient compression than previous state of the art"
+- Analogy: like word tokenization in LLMs, but for video
+
+LAYER 3 - Foundation Models:
+- Two model architectures side by side:
+  a) Diffusion models: noise → refinement → coherent prediction (sculptor analogy)
+  b) Autoregressive transformers: sequential token prediction (like LLMs)
+- "Trained on 9 trillion tokens from 20M hours of video"
+
+LAYER 4 - Application Models (top):
+- Predict: generates future video states for driving/robotics
+- Transfer: sim-to-real adaptation
+- Reason: causal understanding, spatial awareness, video QA
+
+Annotations:
+- "Platform strategy: providing picks and shovels during the gold rush"
+- Arrows showing how external teams build on top of Cosmos
+
+Style: Clean layered architecture diagram, like a tech stack visualization.

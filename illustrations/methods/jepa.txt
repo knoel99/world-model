@@ -1,0 +1,16 @@
+Create a scientific diagram illustrating the JEPA (Joint Embedding Predictive Architecture) approach to world models, as developed by Yann LeCun and Meta AI.
+
+The diagram should show the following pipeline:
+1. Input: A video sequence showing a physical scene (e.g., a ball rolling on a table)
+2. Encoder: The video frames pass through a Vision Transformer encoder that compresses them into a compact latent representation (abstract vectors, not pixels)
+3. Latent Space: A cloud or abstract space where the scene is represented as compact vectors capturing essential physics (position, motion) rather than pixel details
+4. Predictor: A prediction module operating in latent space that predicts future states abstractly ("ball will fall") without generating pixel-level images
+5. Output: Abstract predictions about what will happen next, used for robot planning
+
+Key annotations:
+- "No pixel reconstruction" with a crossed-out pixel grid
+- "Self-supervised learning" label
+- "62 hours of robot video sufficient for fine-tuning" annotation
+- Arrow from latent predictions to a robot arm executing planned actions
+
+Style: Clean academic figure with labeled components, arrows showing data flow, and a comparison showing why pixel prediction fails (too many possible futures) vs latent prediction succeeds.

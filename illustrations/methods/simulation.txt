@@ -1,0 +1,25 @@
+Create a scientific diagram illustrating the Learned Simulation approach to world models, combining two research streams: interactive video generation (Genie 3) and reinforcement learning in imagination (Dreamer V3/V4).
+
+The diagram should show two parallel pipelines converging:
+
+LEFT PIPELINE - Interactive Video Generation (Genie 3):
+1. Text prompt input ("a Japanese garden by a lake")
+2. Autoregressive video model generating frames one by one
+3. User actions (move forward, turn, interact) feeding back into generation
+4. Output: Interactive 3D-like environment at 24 fps
+5. Note: "Coherence holds ~1 minute"
+
+RIGHT PIPELINE - Learning by Dreaming (Dreamer V4):
+1. Agent observes real world briefly
+2. Builds compact latent world model
+3. "Dreams": imagines thousands of action sequences in latent space
+4. Evaluates outcomes and refines policy
+5. Key result: "Obtains diamonds in Minecraft purely by imagination, fully offline"
+
+CENTER - Convergence:
+- Arrow showing the two pipelines merging
+- Humans can play in Dreamer's world model
+- Genie 3 trains DeepMind's SIMA agents
+- Shared need: "Faithfully simulate consequences of actions over long horizons"
+
+Style: Academic diagram with clear flow arrows, labeled components, and side-by-side comparison layout.
