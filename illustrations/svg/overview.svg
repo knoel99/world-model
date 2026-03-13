@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" font-family="Inter, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#555"/>
+    </marker>
+    <filter id="shadow" x="-4%" y="-4%" width="108%" height="108%">
+      <feDropShadow dx="1" dy="1" stdDeviation="2" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="620" fill="#fafbfc" rx="8"/>
+
+  <!-- Title -->
+  <text x="450" y="38" text-anchor="middle" font-size="18" font-weight="700" fill="#1a1a2e">Cinq approches des World Models</text>
+
+  <!-- Central node -->
+  <circle cx="450" cy="310" r="62" fill="#2d3436" stroke="#1a1a2e" stroke-width="2" filter="url(#shadow)"/>
+  <text x="450" y="303" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">World</text>
+  <text x="450" y="321" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">Models</text>
+
+  <!-- 1. JEPA - top left -->
+  <line x1="400" y1="260" x2="175" y2="130" stroke="#6c5ce7" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="68" width="230" height="120" rx="10" fill="#fff" stroke="#6c5ce7" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="60" y="68" width="230" height="28" rx="10" fill="#6c5ce7"/>
+  <rect x="60" y="86" width="230" height="10" fill="#6c5ce7"/>
+  <text x="175" y="88" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">1. JEPA (AMI Labs / LeCun)</text>
+  <!-- Mini pipeline -->
+  <rect x="78" y="106" width="40" height="26" rx="3" fill="#dfe6e9" stroke="#6c5ce7" stroke-width="1"/>
+  <text x="98" y="123" text-anchor="middle" font-size="8" fill="#2d3436">Video</text>
+  <line x1="118" y1="119" x2="134" y2="119" stroke="#6c5ce7" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="136" y="106" width="48" height="26" rx="3" fill="#a29bfe" stroke="#6c5ce7" stroke-width="1"/>
+  <text x="160" y="118" text-anchor="middle" font-size="7" font-weight="600" fill="#fff">Espace</text>
+  <text x="160" y="128" text-anchor="middle" font-size="7" font-weight="600" fill="#fff">latent</text>
+  <line x1="184" y1="119" x2="200" y2="119" stroke="#6c5ce7" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="202" y="106" width="48" height="26" rx="3" fill="#dfe6e9" stroke="#6c5ce7" stroke-width="1"/>
+  <text x="226" y="118" text-anchor="middle" font-size="7" fill="#2d3436">Prediction</text>
+  <text x="226" y="128" text-anchor="middle" font-size="7" fill="#2d3436">abstraite</text>
+  <text x="175" y="152" text-anchor="middle" font-size="8" fill="#636e72">Pas de reconstruction pixel</text>
+  <text x="175" y="164" text-anchor="middle" font-size="8" fill="#636e72">Auto-supervise / 62h suffisent</text>
+  <text x="175" y="176" text-anchor="middle" font-size="8" font-style="italic" fill="#6c5ce7">Comprendre sans voir</text>
+
+  <!-- 2. Spatial Intelligence - top right -->
+  <line x1="500" y1="260" x2="680" y2="130" stroke="#00b894" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="590" y="68" width="240" height="120" rx="10" fill="#fff" stroke="#00b894" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="590" y="68" width="240" height="28" rx="10" fill="#00b894"/>
+  <rect x="590" y="86" width="240" height="10" fill="#00b894"/>
+  <text x="710" y="88" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">2. Intelligence spatiale (Li)</text>
+  <!-- Mini 2D to 3D -->
+  <rect x="608" y="108" width="36" height="28" rx="2" fill="#dfe6e9" stroke="#00b894" stroke-width="1"/>
+  <text x="626" y="126" text-anchor="middle" font-size="8" fill="#2d3436">2D</text>
+  <line x1="644" y1="122" x2="670" y2="122" stroke="#00b894" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <!-- 3D cube -->
+  <polygon points="690,108 720,100 740,110 710,118" fill="#55efc4" stroke="#00b894" stroke-width="1"/>
+  <polygon points="690,108 690,132 710,142 710,118" fill="#00b894" stroke="#00b894" stroke-width="1" opacity="0.6"/>
+  <polygon points="710,118 740,110 740,134 710,142" fill="#00cec9" stroke="#00b894" stroke-width="1"/>
+  <text x="715" y="125" text-anchor="middle" font-size="7" font-weight="600" fill="#fff">3D</text>
+  <!-- Camera icons -->
+  <circle cx="770" cy="110" r="6" fill="none" stroke="#00b894" stroke-width="1"/>
+  <line x1="770" y1="110" x2="740" y2="118" stroke="#00b894" stroke-width="0.8" stroke-dasharray="2,2"/>
+  <circle cx="775" cy="135" r="6" fill="none" stroke="#00b894" stroke-width="1"/>
+  <line x1="775" y1="135" x2="740" y2="130" stroke="#00b894" stroke-width="0.8" stroke-dasharray="2,2"/>
+  <text x="710" y="158" text-anchor="middle" font-size="8" fill="#636e72">Scenes 3D navigables et editables</text>
+  <text x="710" y="170" text-anchor="middle" font-size="8" fill="#636e72">Monde persistant (Marble)</text>
+  <text x="710" y="182" text-anchor="middle" font-size="8" font-style="italic" fill="#00b894">Construire le monde en 3D</text>
+
+  <!-- 3. Learned Simulation - left -->
+  <line x1="390" y1="340" x2="210" y2="400" stroke="#e17055" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="40" y="360" width="240" height="135" rx="10" fill="#fff" stroke="#e17055" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="40" y="360" width="240" height="28" rx="10" fill="#e17055"/>
+  <rect x="40" y="378" width="240" height="10" fill="#e17055"/>
+  <text x="160" y="380" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">3. Simulation apprise (DeepMind)</text>
+  <!-- Dream loop -->
+  <ellipse cx="120" cy="425" rx="40" ry="20" fill="#fab1a0" stroke="#e17055" stroke-width="1"/>
+  <text x="120" y="428" text-anchor="middle" font-size="8" font-weight="600" fill="#2d3436">Reve</text>
+  <path d="M160,425 Q180,405 200,425" fill="none" stroke="#e17055" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="195" y="413" width="50" height="24" rx="3" fill="#dfe6e9" stroke="#e17055" stroke-width="1"/>
+  <text x="220" y="428" text-anchor="middle" font-size="7" fill="#2d3436">Politique</text>
+  <path d="M195,437 Q180,450 160,437" fill="none" stroke="#e17055" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="160" y="462" text-anchor="middle" font-size="8" fill="#636e72">Genie 3: monde interactif 24fps</text>
+  <text x="160" y="474" text-anchor="middle" font-size="8" fill="#636e72">Dreamer V4: diamants Minecraft</text>
+  <text x="160" y="486" text-anchor="middle" font-size="8" font-style="italic" fill="#e17055">Apprendre en imaginant</text>
+
+  <!-- 4. NVIDIA Cosmos - right -->
+  <line x1="510" y1="340" x2="680" y2="400" stroke="#0984e3" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="600" y="360" width="240" height="135" rx="10" fill="#fff" stroke="#0984e3" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="600" y="360" width="240" height="28" rx="10" fill="#0984e3"/>
+  <rect x="600" y="378" width="240" height="10" fill="#0984e3"/>
+  <text x="720" y="380" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">4. NVIDIA Cosmos</text>
+  <!-- Stack layers -->
+  <rect x="630" y="398" width="180" height="18" rx="3" fill="#74b9ff" stroke="#0984e3" stroke-width="1"/>
+  <text x="720" y="411" text-anchor="middle" font-size="8" font-weight="600" fill="#2d3436">Predict / Transfer / Reason</text>
+  <rect x="630" y="418" width="180" height="18" rx="3" fill="#81ecec" stroke="#0984e3" stroke-width="1"/>
+  <text x="720" y="431" text-anchor="middle" font-size="8" font-weight="600" fill="#2d3436">Modeles fondation (9T tokens)</text>
+  <rect x="630" y="438" width="180" height="18" rx="3" fill="#dfe6e9" stroke="#0984e3" stroke-width="1"/>
+  <text x="720" y="451" text-anchor="middle" font-size="8" font-weight="600" fill="#2d3436">Tokenizer visuel (8x efficace)</text>
+  <rect x="630" y="458" width="180" height="18" rx="3" fill="#b2bec3" stroke="#0984e3" stroke-width="1"/>
+  <text x="720" y="471" text-anchor="middle" font-size="8" font-weight="600" fill="#2d3436">20M h video / Blackwell GPU</text>
+  <text x="720" y="490" text-anchor="middle" font-size="8" font-style="italic" fill="#0984e3">Plateforme : pioches et pelles</text>
+
+  <!-- 5. Active Inference - bottom center -->
+  <line x1="450" y1="372" x2="450" y2="510" stroke="#fdcb6e" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="315" y="510" width="270" height="100" rx="10" fill="#fff" stroke="#fdcb6e" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="315" y="510" width="270" height="28" rx="10" fill="#f39c12"/>
+  <rect x="315" y="528" width="270" height="10" fill="#f39c12"/>
+  <text x="450" y="530" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">5. Inference active (VERSES / Friston)</text>
+  <!-- Circular loop -->
+  <circle cx="380" cy="572" r="15" fill="#ffeaa7" stroke="#f39c12" stroke-width="1.5"/>
+  <text x="380" y="575" text-anchor="middle" font-size="7" font-weight="600" fill="#2d3436">Predit</text>
+  <path d="M395,570 Q420,555 440,568" fill="none" stroke="#f39c12" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <circle cx="450" cy="572" r="15" fill="#ffeaa7" stroke="#f39c12" stroke-width="1.5"/>
+  <text x="450" y="575" text-anchor="middle" font-size="7" font-weight="600" fill="#2d3436">Observe</text>
+  <path d="M465,575 Q480,590 520,578" fill="none" stroke="#f39c12" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <circle cx="530" cy="572" r="15" fill="#ffeaa7" stroke="#f39c12" stroke-width="1.5"/>
+  <text x="530" y="570" text-anchor="middle" font-size="6" font-weight="600" fill="#2d3436">Min.</text>
+  <text x="530" y="579" text-anchor="middle" font-size="6" font-weight="600" fill="#2d3436">surprise</text>
+  <path d="M520,558 Q470,545 395,558" fill="none" stroke="#f39c12" stroke-width="1.2" stroke-dasharray="3,2"/>
+  <text x="450" y="600" text-anchor="middle" font-size="8" font-style="italic" fill="#f39c12">Bayesien, sans reseaux profonds, interpretable</text>
+</svg>

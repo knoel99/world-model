@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 400" font-family="Inter, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="ar" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#00b894"/>
+    </marker>
+    <filter id="s" x="-3%" y="-3%" width="106%" height="106%">
+      <feDropShadow dx="1" dy="1" stdDeviation="2" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <rect width="860" height="400" fill="#fafbfc" rx="8"/>
+
+  <text x="430" y="32" text-anchor="middle" font-size="17" font-weight="700" fill="#1a1a2e">Intelligence spatiale : de la 2D a la 3D</text>
+  <text x="430" y="50" text-anchor="middle" font-size="11" fill="#636e72">World Labs (Fei-Fei Li) - Produit Marble</text>
+
+  <!-- ===== LEFT: 2D Input ===== -->
+  <rect x="30" y="75" width="180" height="200" rx="10" fill="#fff" stroke="#00b894" stroke-width="2" filter="url(#s)"/>
+  <text x="120" y="98" text-anchor="middle" font-size="12" font-weight="700" fill="#00b894">Entree</text>
+  <!-- Photo frame -->
+  <rect x="55" y="110" width="130" height="90" rx="4" fill="#dfe6e9" stroke="#b2bec3" stroke-width="1"/>
+  <!-- Simple scene in photo -->
+  <rect x="65" y="165" width="110" height="25" fill="#81ecec" opacity="0.4"/>
+  <rect x="90" y="130" width="30" height="60" rx="2" fill="#b2bec3"/>
+  <rect x="80" y="120" width="50" height="15" rx="8" fill="#55efc4"/>
+  <circle cx="150" cy="145" r="12" fill="#fdcb6e" opacity="0.6"/>
+  <text x="120" y="220" text-anchor="middle" font-size="9" fill="#636e72">Photo unique ou texte</text>
+  <text x="120" y="235" text-anchor="middle" font-size="9" fill="#636e72">descriptif</text>
+  <text x="120" y="260" text-anchor="middle" font-size="9" font-weight="600" fill="#2d3436">Image plate 2D</text>
+
+  <!-- Arrow -->
+  <line x1="210" y1="175" x2="270" y2="175" stroke="#00b894" stroke-width="3" marker-end="url(#ar)"/>
+  <text x="240" y="165" text-anchor="middle" font-size="9" font-weight="600" fill="#00b894">IA</text>
+
+  <!-- ===== CENTER: 3D Output ===== -->
+  <rect x="275" y="75" width="300" height="260" rx="10" fill="#fff" stroke="#00b894" stroke-width="2" filter="url(#s)"/>
+  <text x="425" y="98" text-anchor="middle" font-size="12" font-weight="700" fill="#00b894">Sortie : Monde 3D persistant</text>
+
+  <!-- 3D scene - isometric building -->
+  <g transform="translate(320,110)">
+    <!-- Ground plane -->
+    <polygon points="0,130 100,100 200,130 100,160" fill="#55efc4" opacity="0.3" stroke="#00b894" stroke-width="0.5"/>
+    <!-- Building -->
+    <polygon points="70,60 130,40 160,55 100,75" fill="#b2bec3" stroke="#636e72" stroke-width="1"/>
+    <polygon points="70,60 70,120 100,135 100,75" fill="#dfe6e9" stroke="#636e72" stroke-width="1"/>
+    <polygon points="100,75 160,55 160,115 100,135" fill="#a0a8b0" stroke="#636e72" stroke-width="1"/>
+    <!-- Windows -->
+    <rect x="78" y="80" width="12" height="15" fill="#74b9ff" opacity="0.6" transform="skewY(-10)"/>
+    <rect x="78" y="100" width="12" height="15" fill="#74b9ff" opacity="0.6" transform="skewY(-10)"/>
+    <!-- Tree -->
+    <line x1="40" y1="100" x2="40" y2="125" stroke="#6d4c41" stroke-width="3"/>
+    <circle cx="40" cy="95" r="15" fill="#00b894" opacity="0.7"/>
+    <!-- Sun -->
+    <circle cx="180" cy="30" r="14" fill="#fdcb6e"/>
+  </g>
+
+  <!-- Camera viewpoints -->
+  <g fill="none" stroke="#e17055" stroke-width="1.5">
+    <circle cx="310" cy="200" r="8"/>
+    <line x1="318" y1="200" x2="370" y2="210" stroke-dasharray="3,2"/>
+    <text x="310" y="220" text-anchor="middle" font-size="7" fill="#e17055">Cam 1</text>
+
+    <circle cx="530" cy="160" r="8"/>
+    <line x1="522" y1="160" x2="480" y2="190" stroke-dasharray="3,2"/>
+    <text x="530" y="180" text-anchor="middle" font-size="7" fill="#e17055">Cam 2</text>
+
+    <circle cx="540" cy="280" r="8"/>
+    <line x1="532" y1="275" x2="470" y2="250" stroke-dasharray="3,2"/>
+    <text x="540" y="298" text-anchor="middle" font-size="7" fill="#e17055">Cam 3</text>
+  </g>
+
+  <text x="425" y="310" text-anchor="middle" font-size="9" fill="#636e72">Navigation libre - Objets editables</text>
+  <text x="425" y="325" text-anchor="middle" font-size="9" font-weight="600" fill="#00b894">L'arriere du batiment existe meme</text>
+  <text x="425" y="338" text-anchor="middle" font-size="9" font-weight="600" fill="#00b894">quand la camera ne le regarde pas</text>
+
+  <!-- ===== RIGHT: Comparison ===== -->
+  <rect x="600" y="75" width="230" height="260" rx="10" fill="#fff" stroke="#636e72" stroke-width="1.5" filter="url(#s)"/>
+  <text x="715" y="98" text-anchor="middle" font-size="11" font-weight="700" fill="#2d3436">Comparaison</text>
+
+  <!-- Video generator -->
+  <rect x="620" y="110" width="190" height="65" rx="6" fill="#fff3f3" stroke="#d63031" stroke-width="1"/>
+  <text x="715" y="128" text-anchor="middle" font-size="10" font-weight="600" fill="#d63031">Generateur video</text>
+  <!-- Film strip -->
+  <rect x="635" y="138" width="25" height="18" rx="2" fill="#fab1a0"/>
+  <rect x="665" y="138" width="25" height="18" rx="2" fill="#fab1a0"/>
+  <rect x="695" y="138" width="25" height="18" rx="2" fill="#fab1a0"/>
+  <rect x="725" y="138" width="25" height="18" rx="2" fill="#fab1a0"/>
+  <rect x="755" y="138" width="25" height="18" rx="2" fill="#fab1a0"/>
+  <text x="715" y="168" text-anchor="middle" font-size="8" fill="#636e72">Succession d'images plates</text>
+
+  <!-- vs -->
+  <text x="715" y="195" text-anchor="middle" font-size="12" font-weight="700" fill="#636e72">vs</text>
+
+  <!-- Marble / 3D world -->
+  <rect x="620" y="205" width="190" height="65" rx="6" fill="#e8fff5" stroke="#00b894" stroke-width="1.5"/>
+  <text x="715" y="223" text-anchor="middle" font-size="10" font-weight="600" fill="#00b894">Marble (World Labs)</text>
+  <!-- 3D cube -->
+  <polygon points="680,235 710,228 730,238 700,245" fill="#55efc4" stroke="#00b894" stroke-width="1"/>
+  <polygon points="680,235 680,255 700,265 700,245" fill="#00b894" opacity="0.5"/>
+  <polygon points="700,245 730,238 730,258 700,265" fill="#00cec9"/>
+  <text x="715" y="263" text-anchor="middle" font-size="8" fill="#636e72">Monde 3D persistant navigable</text>
+
+  <!-- Technical context -->
+  <text x="715" y="295" text-anchor="middle" font-size="9" font-weight="600" fill="#2d3436">Fondations techniques</text>
+  <text x="715" y="310" text-anchor="middle" font-size="8" fill="#636e72">NeRFs (2020) - reconstruction</text>
+  <text x="715" y="322" text-anchor="middle" font-size="8" fill="#636e72">3D Gaussian Splatting - temps reel</text>
+  <text x="715" y="334" text-anchor="middle" font-size="8" font-weight="600" fill="#00b894">Marble - generation 3D</text>
+
+  <!-- Bottom summary -->
+  <rect x="30" y="355" width="800" height="35" rx="6" fill="#e8fff5" stroke="#00b894" stroke-width="1"/>
+  <text x="430" y="377" text-anchor="middle" font-size="10" font-weight="600" fill="#00b894">Seule approche qui produit des mondes 3D, pas des predictions ni des videos</text>
+</svg>

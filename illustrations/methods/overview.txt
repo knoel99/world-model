@@ -1,0 +1,13 @@
+Create a scientific comparison diagram showing 5 different approaches to World Models in AI. The diagram should have a central concept "World Models" in the center, with 5 branches radiating outward to:
+
+1. JEPA (AMI Labs / Yann LeCun): Shows video input being compressed into an abstract latent space (no pixel prediction). Key visual: video frames → encoder → abstract representation → predictor.
+
+2. Spatial Intelligence (World Labs / Fei-Fei Li): Shows a single 2D image being transformed into a full 3D scene with depth and navigation. Key visual: flat photo → 3D reconstruction with camera paths.
+
+3. Learned Simulation (DeepMind / Runway): Shows an agent "dreaming" inside a learned world model, with a video generation loop. Key visual: agent → world model → imagined rollouts → policy update.
+
+4. NVIDIA Cosmos (Infrastructure): Shows a platform/pipeline stack with data processing, tokenizer, foundation models, and deployment. Key visual: layered stack diagram.
+
+5. Active Inference (VERSES AI / Karl Friston): Shows a Bayesian belief update cycle with prediction, observation, surprise minimization. Key visual: circular loop of predict → observe → update beliefs.
+
+Use a clean, academic style with labeled arrows and clear icons for each approach.

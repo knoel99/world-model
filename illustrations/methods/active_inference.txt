@@ -1,0 +1,34 @@
+Create a scientific diagram illustrating the Active Inference approach to world models, based on Karl Friston's Free Energy Principle, as implemented by VERSES AI (AXIOM system).
+
+The diagram should show:
+
+MAIN LOOP - Active Inference Cycle:
+1. Agent has internal beliefs/predictions about world state
+2. Agent observes the real world
+3. Surprise = mismatch between prediction and observation
+4. Two responses: (a) Update beliefs to match reality, (b) Act on the world to match predictions
+5. Intrinsic curiosity: natural drive to explore uncertain areas
+
+KEY CONTRAST (side panel):
+- Reinforcement Learning: external reward signal drives behavior → "maximize reward"
+- Active Inference: no external reward → "minimize surprise" with preferences and curiosity
+
+AXIOM ARCHITECTURE (bottom section):
+- Structured object-centric world model (not a neural network)
+- Each object represented individually with properties (position, shape, weight) and relations
+- Bayesian inference updates (not gradient descent)
+- Composable: new objects added without retraining
+
+ROBOTICS APPLICATION:
+- Hierarchical multi-agent: each joint has its own inference agent
+- Low-level agents control individual joints
+- High-level agents plan tasks
+- Coordination through shared beliefs
+- "Replans instantly when target moves"
+
+Annotations:
+- "Interpretable: can query agent's beliefs about each object"
+- "Orders of magnitude less data needed"
+- "No deep neural networks required"
+
+Style: Academic diagram with circular inference loop, comparison panel, and hierarchical architecture.
